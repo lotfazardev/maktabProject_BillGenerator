@@ -8,7 +8,7 @@
 }
 
 body {
-  padding: 15px 0px;
+  padding: 15px;
   height: 100vh;
   direction: rtl;
   text-align: center;
@@ -23,6 +23,26 @@ body {
 
 #header {
   height: 10%;
+  position: relative;
+}
+
+#header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+#header #shadow-header {
+  width: 100%;
+  height: 31px;
+  position: absolute;
+  bottom: -31px;
+  right: 0;
+  z-index: 1;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#f4f4f4));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f4f4f4);
 }
 
 #main {

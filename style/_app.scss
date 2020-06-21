@@ -1,9 +1,25 @@
-#header{
+#header {
     height: 10%;
+    position: relative;
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000000;
+    }
+    #shadow-header {
+        width: 100%;
+        height: 31px;
+        position: absolute;
+        bottom: -31px;
+        right: 0;
+        z-index: 1;
+        transform: rotate(-180deg);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f4f4f4);
+    }
 }
-#main{
+#main {
     height: 65%;
 }
-#footer{
+#footer {
     height: 25%;
 }
