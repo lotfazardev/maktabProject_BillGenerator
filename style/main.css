@@ -226,4 +226,13 @@ body {
   border-image-source: linear-gradient(to bottom, #f8c26e, #ffcd7e);
   background-color: #f39c12;
 }
+
+#add-takhfif img {
+  width: 16.4px;
+  height: 17.6px;
+}
+
+#add-takhfif:focus {
+  outline: none;
+}
 /*# sourceMappingURL=main.css.map */
