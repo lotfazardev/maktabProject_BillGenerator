@@ -187,10 +187,44 @@
                 </div>
                 <div class="under-line"></div>
             </div>
-            
         </div>
         <div id="footer" class="row">
-
+            <div class="col-12" id="shadow-footer"></div>
+            <div class="col-6 footer-divs d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center bill-items">
+                    <span class="bill-items-title">جمع کل سفارشات</span>
+                    <span class="bill-items-value">
+                        ۸۲۰٫۹۰۰
+                        <span class="toman">تومان</span>
+                    </span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center bill-items">
+                    <span class="bill-items-title">حق سرویس و کارمزد</span>
+                    <span class="bill-items-value">
+                        ۸۲۰٫۹۰۰
+                        <span class="toman">تومان</span>
+                    </span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center bill-items">
+                    <span class="bill-items-title">تخفیف</span>
+                    <span class="bill-items-value">
+                        ۸۲۰٫۹۰۰
+                        <span class="toman">تومان</span>
+                    </span>
+                </div>
+                <span id="bill-sum">
+                    ۸۹۴٫۴۵۰
+                    <span class="toman">تومان</span>
+                </span>
+            </div>
+            <div class="col-6 footer-divs d-flex flex-column justify-content-end">
+                <div class="d-flex align-items-center" id="off-border">
+                    <input type="text" placeholder="کد تخفیف" id="off">
+                    <button id="add-takhfif"></button>
+                </div>
+                
+                <button class="btn" id="done">ثبت سفارش</button>
+            </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

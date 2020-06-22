@@ -18,7 +18,7 @@
     }
 }
 #main {
-    height: 65%;
+    height: 70%;
     overflow-y: scroll;
     .items {
         height: 130px;
@@ -74,5 +74,88 @@
     font-size: 14px;
 }
 #footer {
-    height: 25%;
+    height: 20%;
+    position: relative;
+    #shadow-footer {
+        height: 41px;
+        position: absolute;
+        top: -39px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f4f4f4);
+    }
+    .footer-divs {
+        height: 100%;
+        padding: 20px;
+    }
+}
+.bill-items {
+    .bill-items-title {
+        font-size: 16.4px;
+        font-weight: bold;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.71);
+    }
+    .bill-items-value {
+        font-size: 21.1px;
+        font-weight: bold;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.71);
+        .toman {
+            font-size: 15.2px;
+        }
+    }
+}
+#bill-sum {
+    font-size: 45.6px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: auto;
+    color: #000000;
+    .toman {
+        font-size: 29.3px;
+    }
+}
+#done {
+    height: 67.9px;
+    border-radius: 11.7px;
+    background-color: #e67e22;
+    font-size: 29.3px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+#off-border {
+    width: 100%;
+    height: 45.6px;
+    border-radius: 22.8px;
+    border: solid 1.2px #e67e22;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    position: relative;
+}
+#off {
+    width: 80%;
+    border: none;
+    color: black;
+    font-size: 21.1px;
+    &:hover {
+        outline: none;
+    }
+    &::placeholder {
+        font-size: 21.1px;
+        font-weight: bold;
+        color: rgba(230, 126, 34, 0.71);
+    }
+}
+#add-takhfif {
+    width: 38.6px;
+    height: 38.6px;
+    border-radius: 50%;
+    position: absolute;
+    left: 3.2px;
+    border-image-source: linear-gradient(to bottom, #f8c26e, #ffcd7e);
+    background-color: #f39c12;
 }
