@@ -2,7 +2,7 @@
     height: 10%;
     position: relative;
     h1 {
-        font-size: 2rem;
+        font-size: 22.2px;
         font-weight: bold;
         color: #000000;
     }
@@ -19,6 +19,59 @@
 }
 #main {
     height: 65%;
+    overflow-y: scroll;
+    .items {
+        height: 130px;
+        padding: 10px 0px 1px 0px;
+        position: relative;
+        .details {
+            padding: 0 !important;
+            h3 {
+                font-size: 17.4px;
+                font-weight: bold;
+                text-align: center;
+                color: #000000;
+            }
+            h5 {
+                font-size: 19.3px;
+                font-weight: bold;
+                text-align: center;
+                color: #000000;
+            }
+            .count {
+                font-size: 28.1px;
+                font-weight: bold;
+                text-align: center;
+                color: #000000;
+            }
+            .icons {
+                margin-right: 5px;
+                img {
+                    width: 15px;
+                    margin: 5px 0px;
+                }
+            }
+            div {
+                .price {
+                    margin-left: 23px;
+                    font-size: 22.8px;
+                    font-weight: bold;
+                    text-align: center;
+                    color: #000000;
+                }
+            }
+        }
+        .under-line {
+            position: absolute;
+            width: 524px;
+            height: 1px;
+            border: solid 1.2px #c6c6c6;
+            bottom: 0;
+        }
+    }
+}
+.toman {
+    font-size: 14px;
 }
 #footer {
     height: 25%;
