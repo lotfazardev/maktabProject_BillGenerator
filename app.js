@@ -74,8 +74,8 @@ function render() {
                         <div class="d-flex justify-content-center align-items-center">
                             <span class="count">${enNum2faNum(foods[i].count)}</span>
                             <div class="icons d-flex flex-column">
-                                <img src="./Assets/group_3@3x.png">
-                                <img src="./Assets/line-2@3x.png">
+                                <img onclick="addItem(${i})" src="./Assets/group_3@3x.png">
+                                <img onclick="deleteItem(${i})" src="./Assets/line-2@3x.png">
                             </div>
                         </div>
                         <span class="price">
@@ -124,3 +124,8 @@ function render() {
     `)
 }
 render()
+
+function addItem(index){
+    foods[index].count++
+    render()
+}
