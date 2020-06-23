@@ -37,7 +37,11 @@ const foods = {
     },
 }
 
-const takhfif = {}
+const takhfif = {
+    "TK-30":30,
+    "TK-40":40,
+    "TK-50":50
+}
 
 function enNum2faNum(number) {
     const FA = "۰۱۲۳۴۵۶۷۸۹"
@@ -135,3 +139,21 @@ function deleteItem(index){
     }
     render()
 }
+
+$(document).ready(function(){
+
+    $('#add-takhfif').click(function(){
+        if(takhfif[$('#off').val()]){
+            offCode = takhfif[$('#off').val()]
+            $('#off').val("")
+            render()
+        }else{
+            $('#off').val("")
+            Swal.fire({
+                icon: 'error',
+                title: 'کد تخفیف شما نامعتبر است'
+              })
+        }
+    });
+  
+});
