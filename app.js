@@ -129,3 +129,9 @@ function addItem(index){
     foods[index].count++
     render()
 }
+function deleteItem(index){
+    if(foods[index].count){
+        foods[index].count--
+    }
+    render()
+}
