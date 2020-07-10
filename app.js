@@ -97,7 +97,7 @@ function render() {
     }
     finalSum = sumOfAllRequests + (sumOfAllRequests * (5 / 100))
     if(offCode){
-        finalSum -= (finalSum * (offCode / 100)) ;
+        finalSum -= Math.floor(finalSum * (offCode / 100)) ;
     }
     $('#resualt').html(`
                 <div class="d-flex justify-content-between align-items-center bill-items">
